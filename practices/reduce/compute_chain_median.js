@@ -1,7 +1,10 @@
 'use strict';
 
 function compute_chain_median(collection) {
-  //在这里写入代码
+
+  let array = collection.split('->');
+  return array.filter((v, k) => k === array.length / 2);
+
 }
 
 module.exports = compute_chain_median;

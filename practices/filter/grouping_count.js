@@ -2,7 +2,17 @@
 
 function grouping_count(collection) {
 
-  //在这里写入代码
+  let stringCollection = collection.map(String);
+
+  return stringCollection.reduce( (acc, cur) => {
+
+    // let found = acc.find( a => a.)
+
+  }, [])
+
+
+  return stringCollection;
+
 }
 
 module.exports = grouping_count;

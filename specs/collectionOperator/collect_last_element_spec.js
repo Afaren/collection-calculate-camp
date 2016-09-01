@@ -9,6 +9,7 @@ describe('collect_last_element', function () {
   it('弹出集合最后一个元素', function() {
 
     var result = collect_last_element(collection);
+    debugger;//程序会停在这里
     expect(result).toEqual(5);
   });
 });

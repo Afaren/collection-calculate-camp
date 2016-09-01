@@ -1,5 +1,9 @@
+'use strict';
 function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
+
+  return collection_a.filter( i=> {
+    return object_b.value.indexOf(i.key) > -1;
+  } ).map(i=> Object.assign(i, i.count--));
 }
 
 module.exports = create_updated_collection;

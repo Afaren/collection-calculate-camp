@@ -2,7 +2,14 @@
 
 function double_to_one(collection) {
 
-  //在这里写入代码
+  let all = [].concat.apply([], collection);
+  let noRepeat = [];
+  for (let a of all) {
+    if (noRepeat.indexOf(a) <= -1) {
+      noRepeat.push(a)
+    }
+  }
+  return noRepeat;
 }
 
 module.exports = double_to_one;

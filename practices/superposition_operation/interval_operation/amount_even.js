@@ -2,7 +2,7 @@
 
 function amount_even(collection) {
 
-  //在这里写入代码
+  return collection.filter(f=>f % 2 === 0).reduce((acc, cur) => acc + cur);
 }
 
 module.exports = amount_even;
